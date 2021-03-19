@@ -1,0 +1,13 @@
+2019-08-04T16:55:38.4134939+05:30  [FTL] Application startup exception (6c57a5ba)
+System.InvalidOperationException: No service for type 'CampaignSync.BussinessLogic.SyncService.Services.CampaignSyncService' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at CampaignSync.Api.SyncService.Startup.Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory) in C:\Projects\campaign-sync\SyncService\CampaignSync.Api.SyncService\Startup.cs:line 93
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.WebHostExtensions.RunAsync(IWebHost host, CancellationToken token, String shutdownMessage)
+2019-08-04T17:10:09.4577962+05:30  [INF] Exception : The remote server returned an error: (401) Unauthorized. (0e24f14e)
+2019-08-04T23:56:48.5283997+05:30  [INF] Exception : The remote server returned an error: (401) Unauthorized. (0e24f14e)
+2019-08-04T23:56:54.6433366+05:30  [INF] Exception : The remote server returned an error: (401) Unauthorized. (0e24f14e)
